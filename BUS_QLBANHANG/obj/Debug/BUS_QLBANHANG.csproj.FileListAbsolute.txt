@@ -1,0 +1,11 @@
+C:\Users\tungnh230802\OneDrive\WorkSpace\duanmau\ASM\BUS_QLBANHANG\bin\Debug\BUS_QLBANHANG.dll
+C:\Users\tungnh230802\OneDrive\WorkSpace\duanmau\ASM\BUS_QLBANHANG\bin\Debug\BUS_QLBANHANG.pdb
+C:\Users\tungnh230802\OneDrive\WorkSpace\duanmau\ASM\BUS_QLBANHANG\bin\Debug\DAL_QLBANHANG.dll
+C:\Users\tungnh230802\OneDrive\WorkSpace\duanmau\ASM\BUS_QLBANHANG\bin\Debug\DTO_QLBANHANG.dll
+C:\Users\tungnh230802\OneDrive\WorkSpace\duanmau\ASM\BUS_QLBANHANG\bin\Debug\DAL_QLBANHANG.pdb
+C:\Users\tungnh230802\OneDrive\WorkSpace\duanmau\ASM\BUS_QLBANHANG\bin\Debug\DTO_QLBANHANG.pdb
+C:\Users\tungnh230802\OneDrive\WorkSpace\duanmau\ASM\BUS_QLBANHANG\obj\Debug\BUS_QLBANHANG.csproj.AssemblyReference.cache
+C:\Users\tungnh230802\OneDrive\WorkSpace\duanmau\ASM\BUS_QLBANHANG\obj\Debug\BUS_QLBANHANG.csproj.CoreCompileInputs.cache
+C:\Users\tungnh230802\OneDrive\WorkSpace\duanmau\ASM\BUS_QLBANHANG\obj\Debug\BUS_QLBANHANG.csproj.CopyComplete
+C:\Users\tungnh230802\OneDrive\WorkSpace\duanmau\ASM\BUS_QLBANHANG\obj\Debug\BUS_QLBANHANG.dll
+C:\Users\tungnh230802\OneDrive\WorkSpace\duanmau\ASM\BUS_QLBANHANG\obj\Debug\BUS_QLBANHANG.pdb
