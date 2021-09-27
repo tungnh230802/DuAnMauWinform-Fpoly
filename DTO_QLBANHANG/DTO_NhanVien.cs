@@ -11,22 +11,22 @@ namespace DTO_QLBANHANG
         private string tenNv;
         private string email;
         private string diaChi;
-        private string vaiTro;
+        private int vaiTro;
         private string matKhau;
-        private string tinhTrang;
+        private int tinhTrang;
 
         public string TenNv { get => tenNv; set => tenNv = value; }
         public string Email { get => email; set => email = value; }
         public string DiaChi { get => diaChi; set => diaChi = value; }
-        public string VaiTro { get => vaiTro; set => vaiTro = value; }
+        public int VaiTro { get => vaiTro; set => vaiTro = value; }
         public string MatKhau { get => matKhau; set => matKhau = value; }
-        public string TinhTrang { get => tinhTrang; set => tinhTrang = value; }
+        public int TinhTrang { get => tinhTrang; set => tinhTrang = value; }
 
         public DTO_NhanVien()
         {
         }
 
-        public DTO_NhanVien(string tenNv, string email, string diaChi, string vaiTro, string matKhau, string tinhTrang)
+        public DTO_NhanVien(string tenNv, string email, string diaChi, int vaiTro, string matKhau, int tinhTrang)
         {
             this.tenNv = tenNv;
             this.email = email;
@@ -36,7 +36,7 @@ namespace DTO_QLBANHANG
             this.tinhTrang = tinhTrang;
         }
 
-        public DTO_NhanVien(string tenNv, string email, string diaChi, string vaiTro, string tinhTrang)
+        public DTO_NhanVien(string tenNv, string email, string diaChi, int vaiTro, int tinhTrang)
         {
             this.tenNv = tenNv;
             this.email = email;

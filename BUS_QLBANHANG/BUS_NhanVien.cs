@@ -2,6 +2,7 @@
 using DTO_QLBANHANG;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
@@ -20,18 +21,16 @@ namespace BUS_QLBANHANG
 
         public string encryption(string passwork)
         {
-            string str_md5 = "";
-            byte[] mang = System.Text.Encoding.UTF8.GetBytes(passwork);
-
-            MD5CryptoServiceProvider my_md5 = new MD5CryptoServiceProvider();
-            mang = my_md5.ComputeHash(mang);
-
-            foreach (byte b in mang)
+            byte[] encrypt;
+            MD5CryptoServiceProvider md5 = new MD5CryptoServiceProvider();
+            UTF8Encoding encode = new UTF8Encoding();
+            encrypt = md5.ComputeHash(encode.GetBytes(passwork));
+            StringBuilder encryptdata = new StringBuilder();
+            for (int i = 0; i < encrypt.Length; i++)
             {
-                str_md5 += b.ToString("X2");
+                encryptdata.Append(encrypt[i].ToString());
             }
-
-            return str_md5;
+            return encryptdata.ToString();
         }
 
         public bool NhanVienQuenMk(string email)
@@ -42,6 +41,41 @@ namespace BUS_QLBANHANG
         public bool TaoMoiMatKhau(string email, string matKhauMoi)
         {
             return dal_nhanvien.TaoMauKhauMoi(email, matKhauMoi);
+        }
+
+        public bool VaiTroNhanVien(string email)
+        {
+            return dal_nhanvien.VaiTroNhanVien(email);
+        }
+
+        public bool DoiMatKhau(string email, string oddPass, string newPass)
+        {
+            return dal_nhanvien.DoiMatKhau(email, oddPass, newPass);
+        }
+
+        public DataTable getNhanVien()
+        {
+            return dal_nhanvien.getNhanVien();
+        }
+
+        public bool InsertNhanVien(DTO_NhanVien nv)
+        {
+            return dal_nhanvien.InsertNhanVien(nv);
+        }
+
+        public bool UpdateNhanVien(DTO_NhanVien nv)
+        {
+            return dal_nhanvien.UpdateNhanVien(nv);
+        }
+
+        public bool DeleteNhanVien(string email)
+        {
+            return dal_nhanvien.DeleteNhanVien(email);
+        }
+
+        public DataTable SearchNhanVien(string tenNv)
+        {
+            return dal_nhanvien.SearchNhanVien(tenNv);
         }
     }
 }

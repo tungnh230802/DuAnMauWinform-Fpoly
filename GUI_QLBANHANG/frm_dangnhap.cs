@@ -14,10 +14,11 @@ using System.Windows.Forms;
 
 namespace GUI_QLBANHANG
 {
-    public partial class frm_dangnhap_qlbh : Form
+    public partial class frm_dangnhap : Form
     {
         BUS_NhanVien busNhanVien = new BUS_NhanVien();
-        public frm_dangnhap_qlbh()
+        public bool IsAdmin { get; set; }
+        public frm_dangnhap()
         {
             InitializeComponent();
         }
@@ -29,7 +30,11 @@ namespace GUI_QLBANHANG
             nv.MatKhau = busNhanVien.encryption(txb_matkhau.Text);
             if (busNhanVien.NhanVienDangNhap(nv))
             {
+                frm_main.mail = nv.Email;
                 MessageBox.Show("đăng nhập thành công");
+                IsAdmin = busNhanVien.VaiTroNhanVien(nv.Email);
+                frm_main.section = 1;
+                this.Close();
             }
             else
             {
@@ -112,12 +117,17 @@ namespace GUI_QLBANHANG
 
         private void btn_thoat_Click(object sender, EventArgs e)
         {
-            Environment.Exit(0);
+            this.Close();
         }
 
         private void frm_dangnhap_qlbh_Load(object sender, EventArgs e)
         {
   
+        }
+
+        public void frm_dangnhap_qlbh_FormClosing(object sender, FormClosingEventArgs e)
+        {
+
         }
     }
 }

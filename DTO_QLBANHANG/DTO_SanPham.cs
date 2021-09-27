@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DTO_QLBANHANG
 {
-    class DTO_Hang
+    class DTO_SanPham
     {
         private string tenHang;
         private int soLuong;
@@ -24,7 +24,7 @@ namespace DTO_QLBANHANG
         public string GhiChu { get => ghiChu; set => ghiChu = value; }
         public string MaNV { get => maNV; set => maNV = value; }
 
-        public DTO_Hang(string tenHang, int soLuong, float donGiaBan, float donGiaNhap, string hinhAnh, string ghiChu, string maNV)
+        public DTO_SanPham(string tenHang, int soLuong, float donGiaBan, float donGiaNhap, string hinhAnh, string ghiChu, string maNV)
         {
             this.tenHang = tenHang;
             this.soLuong = soLuong;

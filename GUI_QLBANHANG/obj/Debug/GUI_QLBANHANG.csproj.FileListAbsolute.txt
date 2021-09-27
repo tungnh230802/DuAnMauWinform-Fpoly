@@ -8,7 +8,6 @@ C:\Users\tungnh230802\OneDrive\WorkSpace\duanmau\ASM\GUI_QLBANHANG\bin\Debug\BUS
 C:\Users\tungnh230802\OneDrive\WorkSpace\duanmau\ASM\GUI_QLBANHANG\bin\Debug\DTO_QLBANHANG.pdb
 C:\Users\tungnh230802\OneDrive\WorkSpace\duanmau\ASM\GUI_QLBANHANG\bin\Debug\DAL_QLBANHANG.pdb
 C:\Users\tungnh230802\OneDrive\WorkSpace\duanmau\ASM\GUI_QLBANHANG\obj\Debug\GUI_QLBANHANG.csproj.AssemblyReference.cache
-C:\Users\tungnh230802\OneDrive\WorkSpace\duanmau\ASM\GUI_QLBANHANG\obj\Debug\GUI_QLBANHANG.frm_dangnhap_qlbh.resources
 C:\Users\tungnh230802\OneDrive\WorkSpace\duanmau\ASM\GUI_QLBANHANG\obj\Debug\GUI_QLBANHANG.Properties.Resources.resources
 C:\Users\tungnh230802\OneDrive\WorkSpace\duanmau\ASM\GUI_QLBANHANG\obj\Debug\GUI_QLBANHANG.csproj.GenerateResource.cache
 C:\Users\tungnh230802\OneDrive\WorkSpace\duanmau\ASM\GUI_QLBANHANG\obj\Debug\GUI_QLBANHANG.csproj.CoreCompileInputs.cache
@@ -16,3 +15,7 @@ C:\Users\tungnh230802\OneDrive\WorkSpace\duanmau\ASM\GUI_QLBANHANG\obj\Debug\GUI
 C:\Users\tungnh230802\OneDrive\WorkSpace\duanmau\ASM\GUI_QLBANHANG\obj\Debug\GUI_QLBANHANG.exe
 C:\Users\tungnh230802\OneDrive\WorkSpace\duanmau\ASM\GUI_QLBANHANG\obj\Debug\GUI_QLBANHANG.pdb
 C:\Users\tungnh230802\OneDrive\WorkSpace\duanmau\ASM\GUI_QLBANHANG\obj\Debug\GUI_QLBANHANG.frm_main.resources
+C:\Users\tungnh230802\OneDrive\WorkSpace\duanmau\ASM\GUI_QLBANHANG\obj\Debug\GUI_QLBANHANG.frm_dangnhap.resources
+C:\Users\tungnh230802\OneDrive\WorkSpace\duanmau\ASM\GUI_QLBANHANG\obj\Debug\GUI_QLBANHANG.frm_ThongTinNv.resources
+C:\Users\tungnh230802\OneDrive\WorkSpace\duanmau\ASM\GUI_QLBANHANG\obj\Debug\GUI_QLBANHANG.frm_NhanVien.resources
+C:\Users\tungnh230802\OneDrive\WorkSpace\duanmau\ASM\GUI_QLBANHANG\obj\Debug\GUI_QLBANHANG.frm_KhachHang.resources
