@@ -124,7 +124,7 @@ namespace DAL_QLBANHANG
         }
 
 
-        public DataTable getNhanVien()
+        public DataTable GetNhanVien()
         {
             try
             {

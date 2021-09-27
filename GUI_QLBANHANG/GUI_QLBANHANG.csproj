@@ -64,6 +64,12 @@
     <Compile Include="frm_NhanVien.Designer.cs">
       <DependentUpon>frm_NhanVien.cs</DependentUpon>
     </Compile>
+    <Compile Include="frm_SanPham.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_SanPham.Designer.cs">
+      <DependentUpon>frm_SanPham.cs</DependentUpon>
+    </Compile>
     <Compile Include="frm_ThongTinNv.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -86,6 +92,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frm_NhanVien.resx">
       <DependentUpon>frm_NhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_SanPham.resx">
+      <DependentUpon>frm_SanPham.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frm_ThongTinNv.resx">
       <DependentUpon>frm_ThongTinNv.cs</DependentUpon>
@@ -124,6 +133,11 @@
       <Project>{2c73938b-8083-482a-9de5-f8762aecb2af}</Project>
       <Name>DTO_QLBANHANG</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Docs\" />
+    <Folder Include="Icons\" />
+    <Folder Include="Images\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

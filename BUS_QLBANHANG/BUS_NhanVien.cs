@@ -53,9 +53,9 @@ namespace BUS_QLBANHANG
             return dal_nhanvien.DoiMatKhau(email, oddPass, newPass);
         }
 
-        public DataTable getNhanVien()
+        public DataTable GetNhanVien()
         {
-            return dal_nhanvien.getNhanVien();
+            return dal_nhanvien.GetNhanVien();
         }
 
         public bool InsertNhanVien(DTO_NhanVien nv)

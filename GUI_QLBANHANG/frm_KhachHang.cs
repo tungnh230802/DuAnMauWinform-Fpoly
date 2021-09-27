@@ -43,7 +43,7 @@ namespace GUI_QLBANHANG
 
             if (string.IsNullOrEmpty(txb_sdt.Text))
             {
-                MessageBox.Show("Bạn phải số điện thoại", "thông báo",
+                MessageBox.Show("Bạn phải nhập số điện thoại", "thông báo",
                    MessageBoxButtons.OK, MessageBoxIcon.Information);
                 txb_sdt.Focus();
             }

@@ -32,7 +32,7 @@ namespace GUI_QLBANHANG
 
         private void LoadGridView_Nhanvien()
         {
-            dgv_nhanvien.DataSource = bus_NhanVien.getNhanVien();
+            dgv_nhanvien.DataSource = bus_NhanVien.GetNhanVien();
             dgv_nhanvien.Columns[0].HeaderText = "Email";
             dgv_nhanvien.Columns[1].HeaderText = "Tên Nhân Viên";
             dgv_nhanvien.Columns[2].HeaderText = "Địa Chỉ";

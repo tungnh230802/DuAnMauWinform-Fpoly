@@ -19,3 +19,4 @@ C:\Users\tungnh230802\OneDrive\WorkSpace\duanmau\ASM\GUI_QLBANHANG\obj\Debug\GUI
 C:\Users\tungnh230802\OneDrive\WorkSpace\duanmau\ASM\GUI_QLBANHANG\obj\Debug\GUI_QLBANHANG.frm_ThongTinNv.resources
 C:\Users\tungnh230802\OneDrive\WorkSpace\duanmau\ASM\GUI_QLBANHANG\obj\Debug\GUI_QLBANHANG.frm_NhanVien.resources
 C:\Users\tungnh230802\OneDrive\WorkSpace\duanmau\ASM\GUI_QLBANHANG\obj\Debug\GUI_QLBANHANG.frm_KhachHang.resources
+C:\Users\tungnh230802\OneDrive\WorkSpace\duanmau\ASM\GUI_QLBANHANG\obj\Debug\GUI_QLBANHANG.frm_SanPham.resources
