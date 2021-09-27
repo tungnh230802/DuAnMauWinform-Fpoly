@@ -20,6 +20,14 @@ namespace DTO_QLBANHANG
         public string Phai { get => phai; set => phai = value; }
         public string Email { get => email; set => email = value; }
 
+        public DTO_KhachHang(string dienThoai, string tenKhach, string diaChi, string phai)
+        {
+            this.dienThoai = dienThoai;
+            this.tenKhach = tenKhach;
+            this.diaChi = diaChi;
+            this.phai = phai;
+        }
+
         public DTO_KhachHang(string dienThoai, string tenKhach, string diaChi, string phai, string email)
         {
             this.dienThoai = dienThoai;

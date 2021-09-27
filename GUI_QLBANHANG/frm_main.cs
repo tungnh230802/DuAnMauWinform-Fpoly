@@ -35,7 +35,6 @@ namespace GUI_QLBANHANG
             else
             {
                 ActiveChildForm(dn.Name);
-                dn.Show();
             }
         }
 
@@ -44,7 +43,6 @@ namespace GUI_QLBANHANG
             frm_main_Load(sender, e);
             this.Refresh();
         }
-
 
         private void ResetValue()
         {
@@ -141,7 +139,6 @@ namespace GUI_QLBANHANG
             }else
             {
                 ActiveChildForm(frm_ttnv.Name);
-                frm_ttnv.Show();
             }
         }
 
@@ -151,6 +148,12 @@ namespace GUI_QLBANHANG
             this.Refresh();
         }
         private void frm_nv_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            frm_main_Load(sender, e);
+            this.Refresh();
+        }
+
+        private void frm_kh_FormClosed(object sender, FormClosedEventArgs e)
         {
             frm_main_Load(sender, e);
             this.Refresh();
@@ -180,7 +183,6 @@ namespace GUI_QLBANHANG
             else
             {
                 ActiveChildForm(frm_nv.Name);
-                frm_nv.Show();
             }
         }
 
@@ -188,7 +190,29 @@ namespace GUI_QLBANHANG
         {
             profile = 1;
             section = 0;
+            foreach (Form frm in this.MdiChildren)
+            {
+                frm.Close();
+            }
             frm_main_Load(sender, e);
+        }
+
+        private void kháchHàngToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frm_KhachHang frm_kh = new frm_KhachHang();
+
+            if (!checkExistForm(frm_kh.Name))
+            {
+                frm_kh.MdiParent = this;
+                frm_kh.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+                frm_kh.Dock = DockStyle.Fill;
+                frm_kh.FormClosed += new FormClosedEventHandler(frm_kh_FormClosed);
+                frm_kh.Show();
+            }
+            else
+            {
+                ActiveChildForm(frm_kh.Name);
+            }
         }
     }
 }

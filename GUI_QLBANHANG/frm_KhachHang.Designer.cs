@@ -41,7 +41,7 @@ namespace GUI_QLBANHANG
             this.btn_sua = new System.Windows.Forms.Button();
             this.btn_xoa = new System.Windows.Forms.Button();
             this.btn_them = new System.Windows.Forms.Button();
-            this.dgv_nhanvien = new System.Windows.Forms.DataGridView();
+            this.dgv_khachhang = new System.Windows.Forms.DataGridView();
             this.label5 = new System.Windows.Forms.Label();
             this.txb_diachi = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -49,7 +49,7 @@ namespace GUI_QLBANHANG
             this.txb_sdt = new System.Windows.Forms.TextBox();
             this.lbl_tennv = new System.Windows.Forms.Label();
             this.lbl_email = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_nhanvien)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_khachhang)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -97,6 +97,7 @@ namespace GUI_QLBANHANG
             this.txb_timkiem.Name = "txb_timkiem";
             this.txb_timkiem.Size = new System.Drawing.Size(253, 22);
             this.txb_timkiem.TabIndex = 43;
+            this.txb_timkiem.Click += new System.EventHandler(this.txb_timkiem_Click);
             // 
             // btn_timkiem
             // 
@@ -108,6 +109,7 @@ namespace GUI_QLBANHANG
             this.btn_timkiem.TabIndex = 42;
             this.btn_timkiem.Text = "Tìm Kiếm";
             this.btn_timkiem.UseVisualStyleBackColor = true;
+            this.btn_timkiem.Click += new System.EventHandler(this.btn_timkiem_Click);
             // 
             // btn_dong
             // 
@@ -120,6 +122,7 @@ namespace GUI_QLBANHANG
             this.btn_dong.TabIndex = 41;
             this.btn_dong.Text = "Đóng";
             this.btn_dong.UseVisualStyleBackColor = true;
+            this.btn_dong.Click += new System.EventHandler(this.btn_dong_Click);
             // 
             // btn_danhsach
             // 
@@ -131,6 +134,7 @@ namespace GUI_QLBANHANG
             this.btn_danhsach.TabIndex = 40;
             this.btn_danhsach.Text = "Danh Sách";
             this.btn_danhsach.UseVisualStyleBackColor = true;
+            this.btn_danhsach.Click += new System.EventHandler(this.btn_danhsach_Click);
             // 
             // btn_boqua
             // 
@@ -142,6 +146,7 @@ namespace GUI_QLBANHANG
             this.btn_boqua.TabIndex = 39;
             this.btn_boqua.Text = "Bỏ Qua";
             this.btn_boqua.UseVisualStyleBackColor = true;
+            this.btn_boqua.Click += new System.EventHandler(this.btn_boqua_Click);
             // 
             // btn_luu
             // 
@@ -165,6 +170,7 @@ namespace GUI_QLBANHANG
             this.btn_sua.TabIndex = 37;
             this.btn_sua.Text = "Sửa";
             this.btn_sua.UseVisualStyleBackColor = true;
+            this.btn_sua.Click += new System.EventHandler(this.btn_sua_Click);
             // 
             // btn_xoa
             // 
@@ -176,6 +182,7 @@ namespace GUI_QLBANHANG
             this.btn_xoa.TabIndex = 36;
             this.btn_xoa.Text = "Xóa";
             this.btn_xoa.UseVisualStyleBackColor = true;
+            this.btn_xoa.Click += new System.EventHandler(this.btn_xoa_Click);
             // 
             // btn_them
             // 
@@ -187,15 +194,17 @@ namespace GUI_QLBANHANG
             this.btn_them.TabIndex = 35;
             this.btn_them.Text = "Thêm";
             this.btn_them.UseVisualStyleBackColor = true;
+            this.btn_them.Click += new System.EventHandler(this.btn_them_Click);
             // 
-            // dgv_nhanvien
+            // dgv_khachhang
             // 
-            this.dgv_nhanvien.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv_nhanvien.Location = new System.Drawing.Point(26, 190);
-            this.dgv_nhanvien.Margin = new System.Windows.Forms.Padding(4);
-            this.dgv_nhanvien.Name = "dgv_nhanvien";
-            this.dgv_nhanvien.Size = new System.Drawing.Size(939, 185);
-            this.dgv_nhanvien.TabIndex = 34;
+            this.dgv_khachhang.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_khachhang.Location = new System.Drawing.Point(26, 190);
+            this.dgv_khachhang.Margin = new System.Windows.Forms.Padding(4);
+            this.dgv_khachhang.Name = "dgv_khachhang";
+            this.dgv_khachhang.Size = new System.Drawing.Size(939, 185);
+            this.dgv_khachhang.TabIndex = 34;
+            this.dgv_khachhang.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_khachhang_CellClick);
             // 
             // label5
             // 
@@ -281,7 +290,7 @@ namespace GUI_QLBANHANG
             this.Controls.Add(this.btn_sua);
             this.Controls.Add(this.btn_xoa);
             this.Controls.Add(this.btn_them);
-            this.Controls.Add(this.dgv_nhanvien);
+            this.Controls.Add(this.dgv_khachhang);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.txb_diachi);
             this.Controls.Add(this.label4);
@@ -295,7 +304,8 @@ namespace GUI_QLBANHANG
             this.Name = "frm_KhachHang";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frm_KhachHang";
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_nhanvien)).EndInit();
+            this.Load += new System.EventHandler(this.frm_KhachHang_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_khachhang)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -315,7 +325,7 @@ namespace GUI_QLBANHANG
         private System.Windows.Forms.Button btn_sua;
         private System.Windows.Forms.Button btn_xoa;
         private System.Windows.Forms.Button btn_them;
-        private System.Windows.Forms.DataGridView dgv_nhanvien;
+        private System.Windows.Forms.DataGridView dgv_khachhang;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox txb_diachi;
         private System.Windows.Forms.Label label4;
