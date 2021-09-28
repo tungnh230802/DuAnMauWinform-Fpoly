@@ -63,7 +63,7 @@ namespace GUI_QLBANHANG
             // txb_timkiem
             // 
             this.txb_timkiem.BackColor = System.Drawing.Color.LightGray;
-            this.txb_timkiem.Location = new System.Drawing.Point(300, 411);
+            this.txb_timkiem.Location = new System.Drawing.Point(300, 436);
             this.txb_timkiem.Margin = new System.Windows.Forms.Padding(4);
             this.txb_timkiem.Name = "txb_timkiem";
             this.txb_timkiem.Size = new System.Drawing.Size(253, 22);
@@ -73,7 +73,7 @@ namespace GUI_QLBANHANG
             // btn_timkiem
             // 
             this.btn_timkiem.ForeColor = System.Drawing.Color.Black;
-            this.btn_timkiem.Location = new System.Drawing.Point(584, 399);
+            this.btn_timkiem.Location = new System.Drawing.Point(584, 424);
             this.btn_timkiem.Margin = new System.Windows.Forms.Padding(4);
             this.btn_timkiem.Name = "btn_timkiem";
             this.btn_timkiem.Size = new System.Drawing.Size(109, 46);
@@ -86,7 +86,7 @@ namespace GUI_QLBANHANG
             // 
             this.btn_dong.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btn_dong.ForeColor = System.Drawing.Color.Black;
-            this.btn_dong.Location = new System.Drawing.Point(854, 453);
+            this.btn_dong.Location = new System.Drawing.Point(854, 478);
             this.btn_dong.Margin = new System.Windows.Forms.Padding(4);
             this.btn_dong.Name = "btn_dong";
             this.btn_dong.Size = new System.Drawing.Size(109, 46);
@@ -98,7 +98,7 @@ namespace GUI_QLBANHANG
             // btn_danhsach
             // 
             this.btn_danhsach.ForeColor = System.Drawing.Color.Black;
-            this.btn_danhsach.Location = new System.Drawing.Point(716, 453);
+            this.btn_danhsach.Location = new System.Drawing.Point(716, 478);
             this.btn_danhsach.Margin = new System.Windows.Forms.Padding(4);
             this.btn_danhsach.Name = "btn_danhsach";
             this.btn_danhsach.Size = new System.Drawing.Size(109, 46);
@@ -110,7 +110,7 @@ namespace GUI_QLBANHANG
             // btn_boqua
             // 
             this.btn_boqua.ForeColor = System.Drawing.Color.Black;
-            this.btn_boqua.Location = new System.Drawing.Point(584, 453);
+            this.btn_boqua.Location = new System.Drawing.Point(584, 478);
             this.btn_boqua.Margin = new System.Windows.Forms.Padding(4);
             this.btn_boqua.Name = "btn_boqua";
             this.btn_boqua.Size = new System.Drawing.Size(109, 46);
@@ -122,7 +122,7 @@ namespace GUI_QLBANHANG
             // btn_luu
             // 
             this.btn_luu.ForeColor = System.Drawing.Color.Black;
-            this.btn_luu.Location = new System.Drawing.Point(444, 453);
+            this.btn_luu.Location = new System.Drawing.Point(444, 478);
             this.btn_luu.Margin = new System.Windows.Forms.Padding(4);
             this.btn_luu.Name = "btn_luu";
             this.btn_luu.Size = new System.Drawing.Size(109, 46);
@@ -134,7 +134,7 @@ namespace GUI_QLBANHANG
             // btn_sua
             // 
             this.btn_sua.ForeColor = System.Drawing.Color.Black;
-            this.btn_sua.Location = new System.Drawing.Point(300, 453);
+            this.btn_sua.Location = new System.Drawing.Point(300, 478);
             this.btn_sua.Margin = new System.Windows.Forms.Padding(4);
             this.btn_sua.Name = "btn_sua";
             this.btn_sua.Size = new System.Drawing.Size(109, 46);
@@ -146,7 +146,7 @@ namespace GUI_QLBANHANG
             // btn_xoa
             // 
             this.btn_xoa.ForeColor = System.Drawing.Color.Black;
-            this.btn_xoa.Location = new System.Drawing.Point(164, 453);
+            this.btn_xoa.Location = new System.Drawing.Point(164, 478);
             this.btn_xoa.Margin = new System.Windows.Forms.Padding(4);
             this.btn_xoa.Name = "btn_xoa";
             this.btn_xoa.Size = new System.Drawing.Size(109, 46);
@@ -158,7 +158,7 @@ namespace GUI_QLBANHANG
             // btn_them
             // 
             this.btn_them.ForeColor = System.Drawing.Color.Black;
-            this.btn_them.Location = new System.Drawing.Point(29, 453);
+            this.btn_them.Location = new System.Drawing.Point(29, 478);
             this.btn_them.Margin = new System.Windows.Forms.Padding(4);
             this.btn_them.Name = "btn_them";
             this.btn_them.Size = new System.Drawing.Size(109, 46);
@@ -173,7 +173,7 @@ namespace GUI_QLBANHANG
             this.dgv_sanpham.Location = new System.Drawing.Point(24, 209);
             this.dgv_sanpham.Margin = new System.Windows.Forms.Padding(4);
             this.dgv_sanpham.Name = "dgv_sanpham";
-            this.dgv_sanpham.Size = new System.Drawing.Size(944, 182);
+            this.dgv_sanpham.Size = new System.Drawing.Size(944, 207);
             this.dgv_sanpham.TabIndex = 35;
             this.dgv_sanpham.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_sanpham_CellClick);
             // 
@@ -349,7 +349,7 @@ namespace GUI_QLBANHANG
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(984, 511);
+            this.ClientSize = new System.Drawing.Size(984, 537);
             this.Controls.Add(this.ptb_hinh);
             this.Controls.Add(this.btn_mohinh);
             this.Controls.Add(this.txb_ghichu);
@@ -378,7 +378,7 @@ namespace GUI_QLBANHANG
             this.Controls.Add(this.lbl_email);
             this.Controls.Add(this.lbl_title);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frm_SanPham";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frm_SanPham";

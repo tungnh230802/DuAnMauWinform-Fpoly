@@ -214,5 +214,42 @@ namespace GUI_QLBANHANG
                 ActiveChildForm(frm_kh.Name);
             }
         }
+
+        private void sảnPhẩmToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frm_SanPham frm_sp = new frm_SanPham();
+
+            if (!checkExistForm(frm_sp.Name))
+            {
+                frm_sp.MdiParent = this;
+                frm_sp.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+                frm_sp.Dock = DockStyle.Fill;
+                frm_sp.FormClosed += new FormClosedEventHandler(frm_kh_FormClosed);
+                frm_sp.Show();
+            }
+            else
+            {
+                ActiveChildForm(frm_sp.Name);
+            }
+        }
+
+        private void thốngKêSảnPhẩmToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+            frm_ThongKe frm_tk = new frm_ThongKe();
+
+            if (!checkExistForm(frm_tk.Name))
+            {
+                frm_tk.MdiParent = this;
+                frm_tk.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+                frm_tk.Dock = DockStyle.Fill;
+                frm_tk.FormClosed += new FormClosedEventHandler(frm_kh_FormClosed);
+                frm_tk.Show();
+            }
+            else
+            {
+                ActiveChildForm(frm_tk.Name);
+            }
+        }
     }
 }

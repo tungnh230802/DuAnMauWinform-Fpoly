@@ -36,5 +36,15 @@ namespace BUS_QLBANHANG
         {
             return dal_SanPham.SearchSanPham(tenHang);
         }
+
+        public DataTable ThongKeHang()
+        {
+            return dal_SanPham.ThongKeHang();
+        }
+
+        public DataTable ThongKeHangTonKho()
+        {
+            return dal_SanPham.ThongKeHangTonKho();
+        }
     }
 }

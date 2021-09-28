@@ -269,11 +269,13 @@ namespace GUI_QLBANHANG
             else
             {
                 DTO_SanPham sp = new DTO_SanPham(txb_tensp.Text, IntSoLuong, FloatBan, FloatNhap,
-                    "\\Images\\" + fileName, txb_ghichu.Text,"tungnh230802@gmail.com");
+                    "\\Images\\" + fileName, txb_ghichu.Text,email);
                 if (bus_SanPham.InsertSanPham(sp))
                 {
+                    if(txb_hinh.Text != checkUrlImage)
+                        File.Copy(fileAddress, fileSavePath, true);
+
                     MessageBox.Show("Thêm sản phẩm thành công");
-                    File.Copy(fileAddress, fileSavePath, true);
                     ResetValue();
                     LoadGridView_KhachHang();
                 }

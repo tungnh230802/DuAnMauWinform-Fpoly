@@ -124,5 +124,41 @@ namespace DAL_QLBANHANG
             finally { _conn.Close(); }
             return null;
         }
+
+        public DataTable ThongKeHang()
+        {
+            try
+            {
+                _conn.Open();
+                SqlCommand cmd = new SqlCommand();
+                cmd.Connection = _conn;
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.CommandText = "ThongKeSP";
+                DataTable dtTKSP = new DataTable();
+                dtTKSP.Load(cmd.ExecuteReader());
+                return dtTKSP;
+            }
+            catch { }
+            finally { _conn.Close(); }
+            return null;
+        }
+
+        public DataTable ThongKeHangTonKho()
+        {
+            try
+            {
+                _conn.Open();
+                SqlCommand cmd = new SqlCommand();
+                cmd.Connection = _conn;
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.CommandText = "ThongKeTonKho";
+                DataTable dtTKSP = new DataTable();
+                dtTKSP.Load(cmd.ExecuteReader());
+                return dtTKSP;
+            }
+            catch { }
+            finally { _conn.Close(); }
+            return null;
+        }
     }
 }

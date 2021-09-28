@@ -31,6 +31,7 @@ namespace GUI_QLBANHANG
             dgv_khachhang.Columns[4].Visible = false;
         }
 
+
         private void btn_luu_Click(object sender, EventArgs e)
         {
             int dienThoai;

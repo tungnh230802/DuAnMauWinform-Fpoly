@@ -92,7 +92,7 @@ namespace GUI_QLBANHANG
             // txb_timkiem
             // 
             this.txb_timkiem.BackColor = System.Drawing.Color.LightGray;
-            this.txb_timkiem.Location = new System.Drawing.Point(302, 412);
+            this.txb_timkiem.Location = new System.Drawing.Point(302, 436);
             this.txb_timkiem.Margin = new System.Windows.Forms.Padding(4);
             this.txb_timkiem.Name = "txb_timkiem";
             this.txb_timkiem.Size = new System.Drawing.Size(253, 22);
@@ -102,7 +102,7 @@ namespace GUI_QLBANHANG
             // btn_timkiem
             // 
             this.btn_timkiem.ForeColor = System.Drawing.Color.Black;
-            this.btn_timkiem.Location = new System.Drawing.Point(586, 400);
+            this.btn_timkiem.Location = new System.Drawing.Point(586, 424);
             this.btn_timkiem.Margin = new System.Windows.Forms.Padding(4);
             this.btn_timkiem.Name = "btn_timkiem";
             this.btn_timkiem.Size = new System.Drawing.Size(109, 46);
@@ -115,7 +115,7 @@ namespace GUI_QLBANHANG
             // 
             this.btn_dong.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btn_dong.ForeColor = System.Drawing.Color.Black;
-            this.btn_dong.Location = new System.Drawing.Point(856, 454);
+            this.btn_dong.Location = new System.Drawing.Point(856, 478);
             this.btn_dong.Margin = new System.Windows.Forms.Padding(4);
             this.btn_dong.Name = "btn_dong";
             this.btn_dong.Size = new System.Drawing.Size(109, 46);
@@ -127,7 +127,7 @@ namespace GUI_QLBANHANG
             // btn_danhsach
             // 
             this.btn_danhsach.ForeColor = System.Drawing.Color.Black;
-            this.btn_danhsach.Location = new System.Drawing.Point(718, 454);
+            this.btn_danhsach.Location = new System.Drawing.Point(718, 478);
             this.btn_danhsach.Margin = new System.Windows.Forms.Padding(4);
             this.btn_danhsach.Name = "btn_danhsach";
             this.btn_danhsach.Size = new System.Drawing.Size(109, 46);
@@ -139,7 +139,7 @@ namespace GUI_QLBANHANG
             // btn_boqua
             // 
             this.btn_boqua.ForeColor = System.Drawing.Color.Black;
-            this.btn_boqua.Location = new System.Drawing.Point(586, 454);
+            this.btn_boqua.Location = new System.Drawing.Point(586, 478);
             this.btn_boqua.Margin = new System.Windows.Forms.Padding(4);
             this.btn_boqua.Name = "btn_boqua";
             this.btn_boqua.Size = new System.Drawing.Size(109, 46);
@@ -151,7 +151,7 @@ namespace GUI_QLBANHANG
             // btn_luu
             // 
             this.btn_luu.ForeColor = System.Drawing.Color.Black;
-            this.btn_luu.Location = new System.Drawing.Point(446, 454);
+            this.btn_luu.Location = new System.Drawing.Point(446, 478);
             this.btn_luu.Margin = new System.Windows.Forms.Padding(4);
             this.btn_luu.Name = "btn_luu";
             this.btn_luu.Size = new System.Drawing.Size(109, 46);
@@ -163,7 +163,7 @@ namespace GUI_QLBANHANG
             // btn_sua
             // 
             this.btn_sua.ForeColor = System.Drawing.Color.Black;
-            this.btn_sua.Location = new System.Drawing.Point(302, 454);
+            this.btn_sua.Location = new System.Drawing.Point(302, 478);
             this.btn_sua.Margin = new System.Windows.Forms.Padding(4);
             this.btn_sua.Name = "btn_sua";
             this.btn_sua.Size = new System.Drawing.Size(109, 46);
@@ -175,7 +175,7 @@ namespace GUI_QLBANHANG
             // btn_xoa
             // 
             this.btn_xoa.ForeColor = System.Drawing.Color.Black;
-            this.btn_xoa.Location = new System.Drawing.Point(166, 454);
+            this.btn_xoa.Location = new System.Drawing.Point(166, 478);
             this.btn_xoa.Margin = new System.Windows.Forms.Padding(4);
             this.btn_xoa.Name = "btn_xoa";
             this.btn_xoa.Size = new System.Drawing.Size(109, 46);
@@ -187,7 +187,7 @@ namespace GUI_QLBANHANG
             // btn_them
             // 
             this.btn_them.ForeColor = System.Drawing.Color.Black;
-            this.btn_them.Location = new System.Drawing.Point(31, 454);
+            this.btn_them.Location = new System.Drawing.Point(31, 478);
             this.btn_them.Margin = new System.Windows.Forms.Padding(4);
             this.btn_them.Name = "btn_them";
             this.btn_them.Size = new System.Drawing.Size(109, 46);
@@ -202,7 +202,7 @@ namespace GUI_QLBANHANG
             this.dgv_khachhang.Location = new System.Drawing.Point(26, 190);
             this.dgv_khachhang.Margin = new System.Windows.Forms.Padding(4);
             this.dgv_khachhang.Name = "dgv_khachhang";
-            this.dgv_khachhang.Size = new System.Drawing.Size(939, 185);
+            this.dgv_khachhang.Size = new System.Drawing.Size(939, 226);
             this.dgv_khachhang.TabIndex = 34;
             this.dgv_khachhang.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_khachhang_CellClick);
             // 
@@ -278,7 +278,7 @@ namespace GUI_QLBANHANG
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(984, 511);
+            this.ClientSize = new System.Drawing.Size(984, 537);
             this.Controls.Add(this.rdo_nu);
             this.Controls.Add(this.rdo_nam);
             this.Controls.Add(this.txb_timkiem);
