@@ -29,6 +29,7 @@ namespace GUI_QLBANHANG
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_main));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.HeThongToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.đăngNhậpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -51,18 +52,13 @@ namespace GUI_QLBANHANG
             // menuStrip1
             // 
             this.menuStrip1.BackColor = System.Drawing.SystemColors.Control;
-            this.menuStrip1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            resources.ApplyResources(this.menuStrip1, "menuStrip1");
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.HeThongToolStripMenuItem,
             this.danhMụcToolStripMenuItem,
             this.thốngKêToolStripMenuItem,
             this.hướngDẫnToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 1, 0, 1);
-            this.menuStrip1.Size = new System.Drawing.Size(984, 24);
-            this.menuStrip1.TabIndex = 0;
-            this.menuStrip1.Text = "menuStrip1";
             // 
             // HeThongToolStripMenuItem
             // 
@@ -72,39 +68,30 @@ namespace GUI_QLBANHANG
             this.thôngTinHồSơToolStripMenuItem,
             this.thoátToolStripMenuItem});
             this.HeThongToolStripMenuItem.Name = "HeThongToolStripMenuItem";
-            this.HeThongToolStripMenuItem.Size = new System.Drawing.Size(71, 22);
-            this.HeThongToolStripMenuItem.Text = "Hệ Thống";
+            resources.ApplyResources(this.HeThongToolStripMenuItem, "HeThongToolStripMenuItem");
             // 
             // đăngNhậpToolStripMenuItem
             // 
             this.đăngNhậpToolStripMenuItem.Name = "đăngNhậpToolStripMenuItem";
-            this.đăngNhậpToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.D)));
-            this.đăngNhậpToolStripMenuItem.Size = new System.Drawing.Size(205, 22);
-            this.đăngNhậpToolStripMenuItem.Text = "Đăng Nhập";
+            resources.ApplyResources(this.đăngNhậpToolStripMenuItem, "đăngNhậpToolStripMenuItem");
             this.đăngNhậpToolStripMenuItem.Click += new System.EventHandler(this.đăngNhậpToolStripMenuItem_Click);
             // 
             // đăngXuấtToolStripMenuItem
             // 
             this.đăngXuấtToolStripMenuItem.Name = "đăngXuấtToolStripMenuItem";
-            this.đăngXuấtToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.X)));
-            this.đăngXuấtToolStripMenuItem.Size = new System.Drawing.Size(205, 22);
-            this.đăngXuấtToolStripMenuItem.Text = "Đăng Xuất";
+            resources.ApplyResources(this.đăngXuấtToolStripMenuItem, "đăngXuấtToolStripMenuItem");
             this.đăngXuấtToolStripMenuItem.Click += new System.EventHandler(this.đăngXuấtToolStripMenuItem_Click);
             // 
             // thôngTinHồSơToolStripMenuItem
             // 
             this.thôngTinHồSơToolStripMenuItem.Name = "thôngTinHồSơToolStripMenuItem";
-            this.thôngTinHồSơToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.H)));
-            this.thôngTinHồSơToolStripMenuItem.Size = new System.Drawing.Size(205, 22);
-            this.thôngTinHồSơToolStripMenuItem.Text = "Thông Tin Hồ Sơ";
+            resources.ApplyResources(this.thôngTinHồSơToolStripMenuItem, "thôngTinHồSơToolStripMenuItem");
             this.thôngTinHồSơToolStripMenuItem.Click += new System.EventHandler(this.thôngTinHồSơToolStripMenuItem_Click);
             // 
             // thoátToolStripMenuItem
             // 
             this.thoátToolStripMenuItem.Name = "thoátToolStripMenuItem";
-            this.thoátToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.F4)));
-            this.thoátToolStripMenuItem.Size = new System.Drawing.Size(205, 22);
-            this.thoátToolStripMenuItem.Text = "Thoát";
+            resources.ApplyResources(this.thoátToolStripMenuItem, "thoátToolStripMenuItem");
             this.thoátToolStripMenuItem.Click += new System.EventHandler(this.thoátToolStripMenuItem_Click);
             // 
             // danhMụcToolStripMenuItem
@@ -114,31 +101,24 @@ namespace GUI_QLBANHANG
             this.nhânViênToolStripMenuItem,
             this.kháchHàngToolStripMenuItem});
             this.danhMụcToolStripMenuItem.Name = "danhMụcToolStripMenuItem";
-            this.danhMụcToolStripMenuItem.Size = new System.Drawing.Size(74, 22);
-            this.danhMụcToolStripMenuItem.Text = "Danh Mục";
+            resources.ApplyResources(this.danhMụcToolStripMenuItem, "danhMụcToolStripMenuItem");
             // 
             // sảnPhẩmToolStripMenuItem
             // 
             this.sảnPhẩmToolStripMenuItem.Name = "sảnPhẩmToolStripMenuItem";
-            this.sảnPhẩmToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.S)));
-            this.sảnPhẩmToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.sảnPhẩmToolStripMenuItem.Text = "Sản Phẩm";
+            resources.ApplyResources(this.sảnPhẩmToolStripMenuItem, "sảnPhẩmToolStripMenuItem");
             this.sảnPhẩmToolStripMenuItem.Click += new System.EventHandler(this.sảnPhẩmToolStripMenuItem_Click);
             // 
             // nhânViênToolStripMenuItem
             // 
             this.nhânViênToolStripMenuItem.Name = "nhânViênToolStripMenuItem";
-            this.nhânViênToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.N)));
-            this.nhânViênToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.nhânViênToolStripMenuItem.Text = "Nhân Viên";
+            resources.ApplyResources(this.nhânViênToolStripMenuItem, "nhânViênToolStripMenuItem");
             this.nhânViênToolStripMenuItem.Click += new System.EventHandler(this.nhânViênToolStripMenuItem_Click);
             // 
             // kháchHàngToolStripMenuItem
             // 
             this.kháchHàngToolStripMenuItem.Name = "kháchHàngToolStripMenuItem";
-            this.kháchHàngToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.K)));
-            this.kháchHàngToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.kháchHàngToolStripMenuItem.Text = "Khách Hàng";
+            resources.ApplyResources(this.kháchHàngToolStripMenuItem, "kháchHàngToolStripMenuItem");
             this.kháchHàngToolStripMenuItem.Click += new System.EventHandler(this.kháchHàngToolStripMenuItem_Click);
             // 
             // thốngKêToolStripMenuItem
@@ -146,15 +126,12 @@ namespace GUI_QLBANHANG
             this.thốngKêToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.thốngKêSảnPhẩmToolStripMenuItem});
             this.thốngKêToolStripMenuItem.Name = "thốngKêToolStripMenuItem";
-            this.thốngKêToolStripMenuItem.Size = new System.Drawing.Size(69, 22);
-            this.thốngKêToolStripMenuItem.Text = "Thống Kê";
+            resources.ApplyResources(this.thốngKêToolStripMenuItem, "thốngKêToolStripMenuItem");
             // 
             // thốngKêSảnPhẩmToolStripMenuItem
             // 
             this.thốngKêSảnPhẩmToolStripMenuItem.Name = "thốngKêSảnPhẩmToolStripMenuItem";
-            this.thốngKêSảnPhẩmToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.P)));
-            this.thốngKêSảnPhẩmToolStripMenuItem.Size = new System.Drawing.Size(217, 22);
-            this.thốngKêSảnPhẩmToolStripMenuItem.Text = "Thống Kê Sản Phẩm";
+            resources.ApplyResources(this.thốngKêSảnPhẩmToolStripMenuItem, "thốngKêSảnPhẩmToolStripMenuItem");
             this.thốngKêSảnPhẩmToolStripMenuItem.Click += new System.EventHandler(this.thốngKêSảnPhẩmToolStripMenuItem_Click);
             // 
             // hướngDẫnToolStripMenuItem
@@ -163,48 +140,34 @@ namespace GUI_QLBANHANG
             this.hướngDẫnSửDụngToolStripMenuItem,
             this.giớiThiệuPhầnMềmToolStripMenuItem});
             this.hướngDẫnToolStripMenuItem.Name = "hướngDẫnToolStripMenuItem";
-            this.hướngDẫnToolStripMenuItem.Size = new System.Drawing.Size(79, 22);
-            this.hướngDẫnToolStripMenuItem.Text = "Hướng dẫn";
+            resources.ApplyResources(this.hướngDẫnToolStripMenuItem, "hướngDẫnToolStripMenuItem");
             // 
             // hướngDẫnSửDụngToolStripMenuItem
             // 
             this.hướngDẫnSửDụngToolStripMenuItem.Name = "hướngDẫnSửDụngToolStripMenuItem";
-            this.hướngDẫnSửDụngToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.H)));
-            this.hướngDẫnSửDụngToolStripMenuItem.Size = new System.Drawing.Size(226, 22);
-            this.hướngDẫnSửDụngToolStripMenuItem.Text = "Hướng Dẫn Sử Dụng";
+            resources.ApplyResources(this.hướngDẫnSửDụngToolStripMenuItem, "hướngDẫnSửDụngToolStripMenuItem");
             this.hướngDẫnSửDụngToolStripMenuItem.Click += new System.EventHandler(this.hướngDẫnSửDụngToolStripMenuItem_Click);
             // 
             // giớiThiệuPhầnMềmToolStripMenuItem
             // 
             this.giớiThiệuPhầnMềmToolStripMenuItem.Name = "giớiThiệuPhầnMềmToolStripMenuItem";
-            this.giớiThiệuPhầnMềmToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.G)));
-            this.giớiThiệuPhầnMềmToolStripMenuItem.Size = new System.Drawing.Size(226, 22);
-            this.giớiThiệuPhầnMềmToolStripMenuItem.Text = "Giới Thiệu Phần Mềm";
+            resources.ApplyResources(this.giớiThiệuPhầnMềmToolStripMenuItem, "giớiThiệuPhầnMềmToolStripMenuItem");
             // 
             // lbl_welcome
             // 
             this.lbl_welcome.BackColor = System.Drawing.SystemColors.Control;
-            this.lbl_welcome.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_welcome.Location = new System.Drawing.Point(797, 7);
-            this.lbl_welcome.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            resources.ApplyResources(this.lbl_welcome, "lbl_welcome");
             this.lbl_welcome.Name = "lbl_welcome";
-            this.lbl_welcome.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.lbl_welcome.Size = new System.Drawing.Size(166, 17);
-            this.lbl_welcome.TabIndex = 1;
-            this.lbl_welcome.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // frm_main
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(984, 561);
             this.Controls.Add(this.lbl_welcome);
             this.Controls.Add(this.menuStrip1);
-            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "frm_main";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Quản Lý Bán Hàng";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frm_main_FormClosing);
             this.Load += new System.EventHandler(this.frm_main_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();

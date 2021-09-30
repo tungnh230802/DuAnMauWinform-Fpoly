@@ -21,6 +21,7 @@ namespace GUI_QLBANHANG
         string fileName;
         string fileSavePath;
         string fileAddress;
+        string saveDirectory = Application.StartupPath + "\\Images\\";
         public frm_SanPham()
         {
             InitializeComponent();
@@ -51,6 +52,7 @@ namespace GUI_QLBANHANG
             txb_dongianhap.Text = null;
             txb_ghichu.Text = null;
             txb_hinh.Text = null;
+            ptb_hinh.Image = null;
 
 
             txb_MaHang.Enabled = false;
@@ -85,6 +87,7 @@ namespace GUI_QLBANHANG
             txb_dongianhap.Text = null;
             txb_ghichu.Text = null;
             txb_hinh.Text = null;
+            ptb_hinh.Image = null;
 
             txb_tensp.Enabled = true;
             txb_soluong.Enabled = true;
@@ -190,11 +193,14 @@ namespace GUI_QLBANHANG
             else
             {
                 DTO_SanPham sp = new DTO_SanPham(int.Parse(txb_MaHang.Text),txb_tensp.Text, IntSoLuong, FloatBan, FloatNhap,
-                    "\\Images\\" + fileName, txb_ghichu.Text);
+                    fileName, txb_ghichu.Text);
                 if (bus_SanPham.UpdateSanPham(sp))
                 {
                     MessageBox.Show("cập nhập sản phẩm thành công");
-                    File.Copy(fileAddress, fileSavePath, true);
+                    if(!string.IsNullOrEmpty(fileAddress) && txb_hinh.Text != checkUrlImage)
+                    {     
+                            File.Copy(fileAddress, fileSavePath, true);
+                    }    
                     ResetValue();
                     LoadGridView_KhachHang();
                 }
@@ -269,7 +275,7 @@ namespace GUI_QLBANHANG
             else
             {
                 DTO_SanPham sp = new DTO_SanPham(txb_tensp.Text, IntSoLuong, FloatBan, FloatNhap,
-                    "\\Images\\" + fileName, txb_ghichu.Text,email);
+                    fileName, txb_ghichu.Text,email);
                 if (bus_SanPham.InsertSanPham(sp))
                 {
                     if(txb_hinh.Text != checkUrlImage)
@@ -340,7 +346,6 @@ namespace GUI_QLBANHANG
 
         private void dgv_sanpham_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            string saveDirectory = Application.StartupPath.Substring(0, (Application.StartupPath.Length - 10));
             if(dgv_sanpham.Rows.Count > 0)
             {
                 txb_tensp.Enabled = true;
@@ -390,9 +395,9 @@ namespace GUI_QLBANHANG
                 fileAddress = dlgOpen.FileName;
                 ptb_hinh.Image = Image.FromFile(fileAddress);
                 fileName = Path.GetFileName(dlgOpen.FileName);
-                string saveDirectory = Application.StartupPath.Substring(0, (Application.StartupPath.Length - 10));
-                fileSavePath = saveDirectory + "\\Images\\" + fileName;
-                txb_hinh.Text = "\\Images\\" + fileName;
+
+                fileSavePath = saveDirectory + fileName;
+                txb_hinh.Text = fileName;
             }
         }
     }

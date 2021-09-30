@@ -1,6 +1,5 @@
 C:\Users\tungnh230802\OneDrive\WorkSpace\duanmau\ASM\DTO_QLBANHANG\bin\Debug\DTO_QLBANHANG.dll
 C:\Users\tungnh230802\OneDrive\WorkSpace\duanmau\ASM\DTO_QLBANHANG\bin\Debug\DTO_QLBANHANG.pdb
-C:\Users\tungnh230802\OneDrive\WorkSpace\duanmau\ASM\DTO_QLBANHANG\obj\Debug\DTO_QLBANHANG.csproj.AssemblyReference.cache
 C:\Users\tungnh230802\OneDrive\WorkSpace\duanmau\ASM\DTO_QLBANHANG\obj\Debug\DTO_QLBANHANG.csproj.CoreCompileInputs.cache
 C:\Users\tungnh230802\OneDrive\WorkSpace\duanmau\ASM\DTO_QLBANHANG\obj\Debug\DTO_QLBANHANG.dll
 C:\Users\tungnh230802\OneDrive\WorkSpace\duanmau\ASM\DTO_QLBANHANG\obj\Debug\DTO_QLBANHANG.pdb

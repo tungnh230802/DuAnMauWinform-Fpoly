@@ -163,7 +163,9 @@ namespace GUI_QLBANHANG
             // 
             // btn_them
             // 
+            this.btn_them.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btn_them.ForeColor = System.Drawing.Color.Black;
+            this.btn_them.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_them.Location = new System.Drawing.Point(23, 478);
             this.btn_them.Margin = new System.Windows.Forms.Padding(4);
             this.btn_them.Name = "btn_them";

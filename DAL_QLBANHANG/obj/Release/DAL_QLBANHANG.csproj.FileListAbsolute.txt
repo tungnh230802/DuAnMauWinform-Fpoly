@@ -1,0 +1,9 @@
+C:\Users\tungnh230802\OneDrive\WorkSpace\duanmau\ASM\DAL_QLBANHANG\bin\Release\DAL_QLBANHANG.dll
+C:\Users\tungnh230802\OneDrive\WorkSpace\duanmau\ASM\DAL_QLBANHANG\bin\Release\DAL_QLBANHANG.pdb
+C:\Users\tungnh230802\OneDrive\WorkSpace\duanmau\ASM\DAL_QLBANHANG\bin\Release\DTO_QLBANHANG.dll
+C:\Users\tungnh230802\OneDrive\WorkSpace\duanmau\ASM\DAL_QLBANHANG\bin\Release\DTO_QLBANHANG.pdb
+C:\Users\tungnh230802\OneDrive\WorkSpace\duanmau\ASM\DAL_QLBANHANG\obj\Release\DAL_QLBANHANG.csproj.AssemblyReference.cache
+C:\Users\tungnh230802\OneDrive\WorkSpace\duanmau\ASM\DAL_QLBANHANG\obj\Release\DAL_QLBANHANG.csproj.CoreCompileInputs.cache
+C:\Users\tungnh230802\OneDrive\WorkSpace\duanmau\ASM\DAL_QLBANHANG\obj\Release\DAL_QLBANHANG.csproj.CopyComplete
+C:\Users\tungnh230802\OneDrive\WorkSpace\duanmau\ASM\DAL_QLBANHANG\obj\Release\DAL_QLBANHANG.dll
+C:\Users\tungnh230802\OneDrive\WorkSpace\duanmau\ASM\DAL_QLBANHANG\obj\Release\DAL_QLBANHANG.pdb

@@ -118,7 +118,7 @@ namespace GUI_QLBANHANG
         {
             try
             {
-                var path = Path.Combine(Directory.GetCurrentDirectory(), "gioithieu.pdf");
+                var path = Path.Combine(Directory.GetCurrentDirectory(), "Docs\\gioithieu.pdf");
                 System.Diagnostics.Process.Start(path);
             }
             catch(FileNotFoundException) 
@@ -164,7 +164,7 @@ namespace GUI_QLBANHANG
             if(MessageBox.Show("Bạn có chắc muốn thoát", "Confirm",
                 MessageBoxButtons.YesNo, MessageBoxIcon.Information) == DialogResult.Yes)
             {
-                this.Close();
+                Environment.Exit(0);
             }
         }
 
@@ -250,6 +250,11 @@ namespace GUI_QLBANHANG
             {
                 ActiveChildForm(frm_tk.Name);
             }
+        }
+
+        private void frm_main_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Environment.Exit(0);
         }
     }
 }
