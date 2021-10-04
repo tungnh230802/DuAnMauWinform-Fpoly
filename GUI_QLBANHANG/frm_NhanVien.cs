@@ -178,9 +178,11 @@ namespace GUI_QLBANHANG
 
         private void SendEmail(string email)
         {
-            try
+            Thread th = new Thread(() =>{
+                 try
             {
-                SmtpClient client = new SmtpClient("smtp.gmail.com", 25);
+                SmtpClient client = new SmtpClient("smtp.gmail.com", 587);
+                client.UseDefaultCredentials = false;
 
                 NetworkCredential cred = new NetworkCredential("tungnh230802@gmail.com", "Hoangtung230802");
                 MailMessage Msg = new MailMessage();
@@ -196,6 +198,8 @@ namespace GUI_QLBANHANG
             {
                 MessageBox.Show(e.Message);
             }
+        });
+            th.Start();
         }
 
         private void dgv_nhanvien_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -204,6 +208,7 @@ namespace GUI_QLBANHANG
             {
                 txb_tennv.Enabled = true;
                 txb_diachi.Enabled = true;
+                txb_email.Enabled = false;
 
                 rdo_hd.Enabled = true;
                 rdo_ngunghd.Enabled = true;

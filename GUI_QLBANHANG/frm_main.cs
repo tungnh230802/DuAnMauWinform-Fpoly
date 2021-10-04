@@ -30,20 +30,13 @@ namespace GUI_QLBANHANG
             {
                 dn.MdiParent = this;
                 dn.Show();
-                dn.FormClosed += new FormClosedEventHandler(frm_dangnhap_qlbh_FormClosed);
+                dn.FormClosed += new FormClosedEventHandler(FormClosed);
             }
             else
             {
                 ActiveChildForm(dn.Name);
             }
         }
-
-        private void frm_dangnhap_qlbh_FormClosed(object sender, FormClosedEventArgs e)
-        {
-            frm_main_Load(sender, e);
-            this.Refresh();
-        }
-
         private void ResetValue()
         {
             if(section == 1)
@@ -118,7 +111,7 @@ namespace GUI_QLBANHANG
         {
             try
             {
-                var path = Path.Combine(Directory.GetCurrentDirectory(), "Docs\\gioithieu.pdf");
+                var path = Path.Combine(Directory.GetCurrentDirectory(), "Docs\\huongdan.pdf");
                 System.Diagnostics.Process.Start(path);
             }
             catch(FileNotFoundException) 
@@ -134,7 +127,7 @@ namespace GUI_QLBANHANG
             if (!checkExistForm(frm_ttnv.Name))
             {
                 frm_ttnv.MdiParent = this;
-                frm_ttnv.FormClosed += new FormClosedEventHandler(frm_ttnv_FormClosed);
+                frm_ttnv.FormClosed += new FormClosedEventHandler(FormClosed);
                 frm_ttnv.Show();
             }else
             {
@@ -142,18 +135,7 @@ namespace GUI_QLBANHANG
             }
         }
 
-        private void frm_ttnv_FormClosed(object sender, FormClosedEventArgs e)
-        {
-            frm_main_Load(sender, e);
-            this.Refresh();
-        }
-        private void frm_nv_FormClosed(object sender, FormClosedEventArgs e)
-        {
-            frm_main_Load(sender, e);
-            this.Refresh();
-        }
-
-        private void frm_kh_FormClosed(object sender, FormClosedEventArgs e)
+        private void FormClosed(object sender, FormClosedEventArgs e)
         {
             frm_main_Load(sender, e);
             this.Refresh();
@@ -161,11 +143,7 @@ namespace GUI_QLBANHANG
 
         private void thoátToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if(MessageBox.Show("Bạn có chắc muốn thoát", "Confirm",
-                MessageBoxButtons.YesNo, MessageBoxIcon.Information) == DialogResult.Yes)
-            {
-                Environment.Exit(0);
-            }
+            this.Close();
         }
 
         private void nhânViênToolStripMenuItem_Click(object sender, EventArgs e)
@@ -177,7 +155,7 @@ namespace GUI_QLBANHANG
                 frm_nv.MdiParent = this;
                 frm_nv.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
                 frm_nv.Dock = DockStyle.Fill;
-                frm_nv.FormClosed += new FormClosedEventHandler(frm_nv_FormClosed);
+                frm_nv.FormClosed += new FormClosedEventHandler(FormClosed);
                 frm_nv.Show();
             }
             else
@@ -206,7 +184,7 @@ namespace GUI_QLBANHANG
                 frm_kh.MdiParent = this;
                 frm_kh.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
                 frm_kh.Dock = DockStyle.Fill;
-                frm_kh.FormClosed += new FormClosedEventHandler(frm_kh_FormClosed);
+                frm_kh.FormClosed += new FormClosedEventHandler(FormClosed);
                 frm_kh.Show();
             }
             else
@@ -224,7 +202,7 @@ namespace GUI_QLBANHANG
                 frm_sp.MdiParent = this;
                 frm_sp.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
                 frm_sp.Dock = DockStyle.Fill;
-                frm_sp.FormClosed += new FormClosedEventHandler(frm_kh_FormClosed);
+                frm_sp.FormClosed += new FormClosedEventHandler(FormClosed);
                 frm_sp.Show();
             }
             else
@@ -243,7 +221,7 @@ namespace GUI_QLBANHANG
                 frm_tk.MdiParent = this;
                 frm_tk.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
                 frm_tk.Dock = DockStyle.Fill;
-                frm_tk.FormClosed += new FormClosedEventHandler(frm_kh_FormClosed);
+                frm_tk.FormClosed += new FormClosedEventHandler(FormClosed);
                 frm_tk.Show();
             }
             else
@@ -254,7 +232,28 @@ namespace GUI_QLBANHANG
 
         private void frm_main_FormClosing(object sender, FormClosingEventArgs e)
         {
-            Environment.Exit(0);
+            if (MessageBox.Show("Bạn có chắc muốn thoát", "Confirm",
+                MessageBoxButtons.YesNo, MessageBoxIcon.Information) == DialogResult.Yes)
+            {
+                e.Cancel = false;
+            }
+            else
+            {
+                e.Cancel = true;
+            }
+        }
+
+        private void giớiThiệuPhầnMềmToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                var path = Path.Combine(Directory.GetCurrentDirectory(), "Docs\\gioithieu.pdf");
+                System.Diagnostics.Process.Start(path);
+            }
+            catch (FileNotFoundException)
+            {
+                MessageBox.Show("không tìm thấy file");
+            }
         }
     }
 }

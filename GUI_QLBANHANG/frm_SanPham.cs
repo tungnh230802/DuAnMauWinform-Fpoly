@@ -27,7 +27,7 @@ namespace GUI_QLBANHANG
             InitializeComponent();
         }
 
-        private void LoadGridView_KhachHang()
+        private void LoadGridView_SanPham()
         {
             dgv_sanpham.DataSource = bus_SanPham.GetSanPham();
             dgv_sanpham.Columns[0].HeaderText = "Mã Sản Phẩm";
@@ -193,7 +193,7 @@ namespace GUI_QLBANHANG
             else
             {
                 DTO_SanPham sp = new DTO_SanPham(int.Parse(txb_MaHang.Text),txb_tensp.Text, IntSoLuong, FloatBan, FloatNhap,
-                    fileName, txb_ghichu.Text);
+                    txb_hinh.Text, txb_ghichu.Text);
                 if (bus_SanPham.UpdateSanPham(sp))
                 {
                     MessageBox.Show("cập nhập sản phẩm thành công");
@@ -346,7 +346,7 @@ namespace GUI_QLBANHANG
 
         private void dgv_sanpham_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            if(dgv_sanpham.Rows.Count > 0)
+            if(dgv_sanpham.Rows.Count > 1)
             {
                 txb_tensp.Enabled = true;
                 txb_soluong.Enabled = true;

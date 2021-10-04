@@ -64,10 +64,10 @@ namespace DAL_QLBANHANG
                 cmd.Connection = _conn;
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.CommandText = "UPDATEDATAINTOKHACHHANG";
-                cmd.Parameters.AddWithValue("DIENTHOAI", kh.DienThoai);
-                cmd.Parameters.AddWithValue("TENKHACH", kh.TenKhach);
-                cmd.Parameters.AddWithValue("DIACHI", kh.DiaChi);
-                cmd.Parameters.AddWithValue("PHAI", kh.Phai);
+                cmd.Parameters.AddWithValue("@DIENTHOAI", kh.DienThoai);
+                cmd.Parameters.AddWithValue("@TENKHACH", kh.TenKhach);
+                cmd.Parameters.AddWithValue("@DIACHI", kh.DiaChi);
+                cmd.Parameters.AddWithValue("@PHAI", kh.Phai);
                 if (cmd.ExecuteNonQuery() > 0)
                     return true;
             }

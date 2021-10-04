@@ -152,6 +152,7 @@ namespace GUI_QLBANHANG
             // 
             this.giớiThiệuPhầnMềmToolStripMenuItem.Name = "giớiThiệuPhầnMềmToolStripMenuItem";
             resources.ApplyResources(this.giớiThiệuPhầnMềmToolStripMenuItem, "giớiThiệuPhầnMềmToolStripMenuItem");
+            this.giớiThiệuPhầnMềmToolStripMenuItem.Click += new System.EventHandler(this.giớiThiệuPhầnMềmToolStripMenuItem_Click);
             // 
             // lbl_welcome
             // 

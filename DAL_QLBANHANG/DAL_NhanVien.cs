@@ -123,7 +123,6 @@ namespace DAL_QLBANHANG
             return false;
         }
 
-
         public DataTable GetNhanVien()
         {
             try
@@ -137,11 +136,12 @@ namespace DAL_QLBANHANG
                 dtNV.Load(cmd.ExecuteReader());
                 return dtNV;
             }
-            catch { return null; }
+            catch {  }
             finally
             {
                 _conn.Close();
             }
+			return null;
         }
 
         public bool InsertNhanVien(DTO_NhanVien nv)

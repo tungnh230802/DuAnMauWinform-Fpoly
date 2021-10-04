@@ -74,7 +74,8 @@ namespace GUI_QLBANHANG
         {
             try
             {
-                SmtpClient client = new SmtpClient("smtp.gmail.com", 25);
+                SmtpClient client = new SmtpClient("smtp.gmail.com", 587);
+                client.UseDefaultCredentials = false;
 
                 NetworkCredential cred = new NetworkCredential("tungnh230802@gmail.com", "Hoangtung230802");
                 MailMessage Msg = new MailMessage();

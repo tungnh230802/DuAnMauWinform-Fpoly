@@ -16,7 +16,6 @@ namespace GUI_QLBANHANG
 {
     public partial class frm_ThongTinNv : Form
     {
-        Thread th;
         string email;
         BUS_NhanVien bus_nhanvien = new BUS_NhanVien();
         public frm_ThongTinNv(string _email)
@@ -90,24 +89,29 @@ namespace GUI_QLBANHANG
 
         private void SendEmail(string email, string matKhauMoi)
         {
-            try
+            Thread th = new Thread(() =>
             {
-                SmtpClient client = new SmtpClient("smtp.gmail.com", 25);
+                try
+                {
+                    SmtpClient client = new SmtpClient("smtp.gmail.com", 587);
+                    client.UseDefaultCredentials = false;
 
-                NetworkCredential cred = new NetworkCredential("tungnh230802@gmail.com", "Hoangtung230802");
-                MailMessage Msg = new MailMessage();
-                Msg.From = new MailAddress("tungnh230802@gmail.com");
-                Msg.To.Add(email);
-                Msg.Subject = "Cập nhật mật khẩu thành công!";
-                Msg.Body = "chúc mừng anh, chị đã cập nhật mật khẩu thành công, mật khẩu mới của bạn là: " + matKhauMoi;
-                client.Credentials = cred;
-                client.EnableSsl = true;
-                client.Send(Msg);
-            }
-            catch (Exception e)
-            {
-                MessageBox.Show(e.Message);
-            }
+                    NetworkCredential cred = new NetworkCredential("tungnh230802@gmail.com", "Hoangtung230802");
+                    MailMessage Msg = new MailMessage();
+                    Msg.From = new MailAddress("tungnh230802@gmail.com");
+                    Msg.To.Add(email);
+                    Msg.Subject = "Cập nhật mật khẩu thành công!";
+                    Msg.Body = "chúc mừng anh, chị đã cập nhật mật khẩu thành công, mật khẩu mới của bạn là: " + matKhauMoi;
+                    client.Credentials = cred;
+                    client.EnableSsl = true;
+                    client.Send(Msg);
+                }
+                catch (Exception e)
+                {
+                    MessageBox.Show(e.Message);
+                }
+            });
+            th.Start();
         }
 
         private void btn_thoat_Click(object sender, EventArgs e)

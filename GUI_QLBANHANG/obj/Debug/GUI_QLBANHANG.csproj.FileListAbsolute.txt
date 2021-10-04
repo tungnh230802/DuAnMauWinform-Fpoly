@@ -1,5 +1,3 @@
-C:\Users\tungnh230802\OneDrive\WorkSpace\duanmau\ASM\GUI_QLBANHANG\bin\Debug\QUANLYBANHANG.mdf
-C:\Users\tungnh230802\OneDrive\WorkSpace\duanmau\ASM\GUI_QLBANHANG\bin\Debug\QUANLYBANHANG_log.ldf
 C:\Users\tungnh230802\OneDrive\WorkSpace\duanmau\ASM\GUI_QLBANHANG\bin\Debug\GUI_QLBANHANG.exe.config
 C:\Users\tungnh230802\OneDrive\WorkSpace\duanmau\ASM\GUI_QLBANHANG\bin\Debug\GUI_QLBANHANG.exe
 C:\Users\tungnh230802\OneDrive\WorkSpace\duanmau\ASM\GUI_QLBANHANG\bin\Debug\GUI_QLBANHANG.pdb

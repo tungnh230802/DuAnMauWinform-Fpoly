@@ -1,8 +1,7 @@
-C:\Users\tungnh230802\OneDrive\WorkSpace\duanmau\ASM\GUI_QLBANHANG\bin\Release\QUANLYBANHANG.mdf
-C:\Users\tungnh230802\OneDrive\WorkSpace\duanmau\ASM\GUI_QLBANHANG\bin\Release\QUANLYBANHANG_log.ldf
 C:\Users\tungnh230802\OneDrive\WorkSpace\duanmau\ASM\GUI_QLBANHANG\bin\Release\GUI_QLBANHANG.exe.config
 C:\Users\tungnh230802\OneDrive\WorkSpace\duanmau\ASM\GUI_QLBANHANG\bin\Release\GUI_QLBANHANG.exe
 C:\Users\tungnh230802\OneDrive\WorkSpace\duanmau\ASM\GUI_QLBANHANG\bin\Release\GUI_QLBANHANG.pdb
+C:\Users\tungnh230802\OneDrive\WorkSpace\duanmau\ASM\GUI_QLBANHANG\bin\Release\aa-DJ\GUI_QLBANHANG.resources.dll
 C:\Users\tungnh230802\OneDrive\WorkSpace\duanmau\ASM\GUI_QLBANHANG\bin\Release\BUS_QLBANHANG.dll
 C:\Users\tungnh230802\OneDrive\WorkSpace\duanmau\ASM\GUI_QLBANHANG\bin\Release\DTO_QLBANHANG.dll
 C:\Users\tungnh230802\OneDrive\WorkSpace\duanmau\ASM\GUI_QLBANHANG\bin\Release\DAL_QLBANHANG.dll
@@ -18,11 +17,10 @@ C:\Users\tungnh230802\OneDrive\WorkSpace\duanmau\ASM\GUI_QLBANHANG\obj\Release\G
 C:\Users\tungnh230802\OneDrive\WorkSpace\duanmau\ASM\GUI_QLBANHANG\obj\Release\GUI_QLBANHANG.frm_ThongTinNv.resources
 C:\Users\tungnh230802\OneDrive\WorkSpace\duanmau\ASM\GUI_QLBANHANG\obj\Release\GUI_QLBANHANG.frm_main.resources
 C:\Users\tungnh230802\OneDrive\WorkSpace\duanmau\ASM\GUI_QLBANHANG\obj\Release\GUI_QLBANHANG.Properties.Resources.resources
+C:\Users\tungnh230802\OneDrive\WorkSpace\duanmau\ASM\GUI_QLBANHANG\obj\Release\GUI_QLBANHANG.frm_main.aa-DJ.resources
 C:\Users\tungnh230802\OneDrive\WorkSpace\duanmau\ASM\GUI_QLBANHANG\obj\Release\GUI_QLBANHANG.csproj.GenerateResource.cache
 C:\Users\tungnh230802\OneDrive\WorkSpace\duanmau\ASM\GUI_QLBANHANG\obj\Release\GUI_QLBANHANG.csproj.CoreCompileInputs.cache
+C:\Users\tungnh230802\OneDrive\WorkSpace\duanmau\ASM\GUI_QLBANHANG\obj\Release\aa-DJ\GUI_QLBANHANG.resources.dll
 C:\Users\tungnh230802\OneDrive\WorkSpace\duanmau\ASM\GUI_QLBANHANG\obj\Release\GUI_QLBANHANG.csproj.CopyComplete
 C:\Users\tungnh230802\OneDrive\WorkSpace\duanmau\ASM\GUI_QLBANHANG\obj\Release\GUI_QLBANHANG.exe
 C:\Users\tungnh230802\OneDrive\WorkSpace\duanmau\ASM\GUI_QLBANHANG\obj\Release\GUI_QLBANHANG.pdb
-C:\Users\tungnh230802\OneDrive\WorkSpace\duanmau\ASM\GUI_QLBANHANG\bin\Release\aa-DJ\GUI_QLBANHANG.resources.dll
-C:\Users\tungnh230802\OneDrive\WorkSpace\duanmau\ASM\GUI_QLBANHANG\obj\Release\GUI_QLBANHANG.frm_main.aa-DJ.resources
-C:\Users\tungnh230802\OneDrive\WorkSpace\duanmau\ASM\GUI_QLBANHANG\obj\Release\aa-DJ\GUI_QLBANHANG.resources.dll

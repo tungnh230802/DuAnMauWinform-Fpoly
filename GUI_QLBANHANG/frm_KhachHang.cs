@@ -34,9 +34,9 @@ namespace GUI_QLBANHANG
 
         private void btn_luu_Click(object sender, EventArgs e)
         {
-            int dienThoai;
-            string txb_dienthoai = txb_sdt.Text.Trim().ToString();
-            bool isInt = int.TryParse(txb_dienthoai, out dienThoai);
+            float dienThoai;
+            string str_dienthoai = txb_sdt.Text.Trim().ToString();
+            float.TryParse(str_dienthoai, out dienThoai);
             string phai = "Nam";
 
             if (rdo_nu.Checked)
@@ -48,19 +48,18 @@ namespace GUI_QLBANHANG
                    MessageBoxButtons.OK, MessageBoxIcon.Information);
                 txb_sdt.Focus();
             }
-            else if (!isInt)
+            else if (dienThoai == 0)
             {
-                MessageBox.Show("Bạn phải nhập số nguyên", "thông báo",
+                MessageBox.Show("Bạn phải nhập số nguyên và phải lớn hơn 0", "thông báo",
                     MessageBoxButtons.OK, MessageBoxIcon.Information);
                 txb_sdt.Focus();
-                
-                if(dienThoai < 0)
-                {
-                    MessageBox.Show("Bạn phải nhập số điện thoại > 0", "thông báo",
-                        MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    txb_sdt.Focus();
-                }
-            } 
+            }
+            else if (string.IsNullOrEmpty(txb_tenkh.Text))
+            {
+                MessageBox.Show("Bạn phải tên khách hàng", "thông báo",
+                MessageBoxButtons.OK, MessageBoxIcon.Information);
+                txb_tenkh.Focus();
+            }
             else if (string.IsNullOrEmpty(txb_diachi.Text))
             {
                 MessageBox.Show("Bạn phải nhập địa chỉ", "thông báo",
@@ -152,7 +151,7 @@ namespace GUI_QLBANHANG
         {
             if (dgv_khachhang.Rows.Count > 1)
             {
-                txb_sdt.Enabled = true;
+                txb_sdt.Enabled = false;
                 txb_tenkh.Enabled = true;
                 txb_diachi.Enabled = true;
 
@@ -230,32 +229,16 @@ namespace GUI_QLBANHANG
 
         private void btn_sua_Click(object sender, EventArgs e)
         {
-            int dienThoai;
-            string txb_dienthoai = txb_sdt.Text.Trim().ToString();
-            bool isInt = int.TryParse(txb_dienthoai, out dienThoai);
             string phai = "Nam";
 
             if (rdo_nu.Checked)
                 phai = "Nữ";
-
-            if (string.IsNullOrEmpty(txb_sdt.Text))
+            
+            if (string.IsNullOrEmpty(txb_tenkh.Text))
             {
-                MessageBox.Show("Bạn phải số điện thoại", "thông báo",
-                   MessageBoxButtons.OK, MessageBoxIcon.Information);
-                txb_sdt.Focus();
-            }
-            else if (!isInt)
-            {
-                MessageBox.Show("Bạn phải nhập số nguyên", "thông báo",
-                    MessageBoxButtons.OK, MessageBoxIcon.Information);
-                txb_sdt.Focus();
-
-                if (dienThoai < 0)
-                {
-                    MessageBox.Show("Bạn phải nhập số điện thoại > 0", "thông báo",
-                        MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    txb_sdt.Focus();
-                }
+                MessageBox.Show("Bạn phải tên khách hàng", "thông báo",
+                MessageBoxButtons.OK, MessageBoxIcon.Information);
+                txb_tenkh.Focus();
             }
             else if (string.IsNullOrEmpty(txb_diachi.Text))
             {
